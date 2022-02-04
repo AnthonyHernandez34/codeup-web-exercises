@@ -8,16 +8,38 @@
 <body>
 <script>
     "use strict";
+
     var myNameis= prompt()
-    console.log (" Userinput"+' '+ myNameis)
+    console.log ("hello "+' '+ myNameis)
     function sayHello(name){
-        alert(myNameis)
-        return "hello from codeup"
-        console.log (" Userinput"+ sayHello)
+        return myNameis
+        console.log ("sayHello" + sayHello)
     }
 
-    sayHello()
+    var helloMessage = sayHello()
+    function helloMessage(name){
+        console.log (helloMessage)
+    }
+//Math
+    var random = Math.floor((Math.random() * 3) + 1);
+    console.log("random number" + random)
 
+    function isTwo(number) {
+        return number % 2 === 0
+    }
+    console.log(isTwo(50));
+
+    console.log(isTwo(75));
+
+    console.log(isTwo(-1));
+//math question 2//
+    var billamt =prompt("how much is the bill")
+    var tipamt =prompt("use 15% , 10% or 8%")
+    var totalamt = (billamt) * .15
+    function calculate(){
+        return (billamt)
+    }
+    console.log(totalamt)
 
 </script>
 </body>

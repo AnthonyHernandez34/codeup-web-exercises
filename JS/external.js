@@ -7,8 +7,8 @@ alert("welcome to my website.");
 
 
 var favoritecolor = prompt("what is your favorite color");
-console.log("the user entered" + favoritecolor);
-alert(`${favoritecolor} that my favoritecolor too`)
+console.log("the user entered" +' '+ favoritecolor);
+alert(`${favoritecolor} that my favorite color too`)
 
 
 // question 1 //
@@ -77,46 +77,47 @@ console.log("total paid out" + ' ' + totalpay)
 // question 3 //
 
 
-var classnotfull= true
-var classconflicts= false
-var enrolled = classnotfull && classconflicts;
+//var classnotfull= true
+//var classconflicts= false
+//var enrolled = classnotfull && classconflicts;
 
-prompt(`${classconflicts} does your time conflict`)
-prompt(`${classnotfull} is the class full`)
+//prompt(`${classconflicts} does your time conflict`)
+//prompt(`${classnotfull} is the class full`)
 
-if (classnotfull <= 20 && classconflicts == "yes"){
-    alert('student can enroll in class!!')
-} else {
-    alert("the student cannot enroll!")
-}
-console.log(enrolled = " cannont enroll in class")
+//if (classnotfull <= 20 && classconflicts == "yes"){
+//    alert('student can enroll in class!!')
+//} else {
+//    alert("the student cannot enroll!")
+//}
+//console.log(enrolled = " cannont enroll in class")
 
-var ismember= false
-prompt("are you a vauled customer")
-if (ismember = " yes discount is avaliable"){
-    alert ( "not a vauled customer no discount")
-} else {
-    alert ("yes i am a vauled customer then offer is valed")
-}
+//var ismember= false
+//prompt("are you a vauled customer")
+//if (ismember = " yes discount is avaliable"){
+//    alert ( "not a vauled customer no discount")
+//} else {
+//    alert ("yes i am a vauled customer then offer is valed")
+//}
+//
 
-var cartsize = 2
-var vailddiscount = false
-var canhavediscount = vailddiscount && (cartsize > 2 || ismember);
-prompt(`${canhavediscount} looks like the offer is not avaible for you`)
-console.log (ismember = " able to get discount")
+//var cartsize = 2
+//var vailddiscount = false
+//var canhavediscount = vailddiscount && (cartsize > 2 || ismember);
+//prompt(`${canhavediscount} looks like the offer is not avaible for you`)
+//console.log (ismember = " able to get discount")
 
-var username = 'codeup', password = "notastrongpassword"
-prompt("enter username")
-alert ("codeup")
-prompt("enter password")
-alert ("notastrongpassword")
-var passwordmustbe = password.length >= 5
-var usernamenotinpassword = password.indexOf(username) === -1;
-var usernamelessthentwenty = username.length <= 20;
-console.log (`${username + ' ' + password} both fit creteria`)
+//var username = 'codeup', password = "notastrongpassword"
+//prompt("enter username")
+//alert ("codeup")
+//prompt("enter password")
+//alert ("notastrongpassword")
+//var passwordmustbe = password.length >= 5
+//var usernamenotinpassword = password.indexOf(username) === -1;
+//var usernamelessthentwenty = username.length <= 20;
+//console.log (`${username + ' ' + password} both fit creteria`)
 
-var whitespace = username.trim() === username && password.trim() === password;
-username.trim()
-'codeup'
-password.trim()
-'notastrongpassword'
+//var whitespace = username.trim() === username && password.trim() === password;
+//username.trim()
+//'codeup'
+//password.trim()
+//'notastrongpassword'

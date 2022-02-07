@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//If over the age of 16 you can drive with insurance//
+//If under the age of 16 and no insurance then you have to get insurance//
+//if none of the above work get a friend to pick you up//
+    function getToDestination (age,isInsured, hasaCar,canGetrideshare) {
+        var age = 20
+        var isInsured = true
+        var hasaCar = true
+        var canGetRideshare = true
+        var callafriend = true
+
+        if (age > 16 && isInsured && hasaCar) {
+            console.log("User is over 16 old enough to drive")
+            console.log("has insurance and can drive own car")
+            return "yes its true"
+
+        } else if (age < 16) {
+            console.log("cant drive ")
+            console.log(" has no insurance and no car, has to get rideshare")
+            return "yes its false"
+        } else {
+            console.log("call a friend if you aint got any")
+        }
+    }
+    getToDestination()
+
+    /* function canGetRideshare(drivernearby, waller ,costofrideshare) {
+         if (drivernearby && wallet > costofrideshare)
+             return true
+         console.log("can get ride share")
+         else {
+             return false
+             console.log("cant not get ride share")
+         }
+     }
+       canGetRideshare(drivernearby= true,wallet=20, costofrideshare=15)
+
+     */
+</script>
+</body>
+</html>

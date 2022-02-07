@@ -34,12 +34,39 @@
     console.log(isTwo(-1));
 //math question 2//
     var billamt =prompt("how much is the bill")
-    var tipamt =prompt("use 15% , 10% or 8%")
-    var totalamt = (billamt) * .15
+    var tipamt =parseInt(prompt("use 15% , 10% or 8%"))/100
+    var totalamt = billamt * .15
     function calculate(){
         return (billamt)
     }
-    console.log(totalamt)
+    console.log(totalamt * 20)
+    console.log(totalamt * 40)
+
+    //math question 3//
+    var price=prompt("this is how much you owe")
+    var quantity = prompt("items that will be discounted")
+    var total = quantity * price
+    var discountprice = 0
+    var discountedtotal = 0
+    const taxRate =0.08
+    var tax = total * taxRate
+    var totalPlusTax = tax;
+    function applyDiscount() {
+        if (quantity > 9 || quantity < 20) {
+        discountprice = .10
+        total = total - (total * discountprice)
+    } else if (quantity > 19 || quantity < 30) {
+        discountprice = .20
+        total = total - (total * discountprice)
+    } else if (quantity > 39 || quantity < 100) {
+        discountprice = .30
+        total = total - (total * discountprice)
+    }
+}
+console.log ("this is the applyied discount"+ ' ' + totalPlusTax)
+//
+
+
 
 </script>
 </body>

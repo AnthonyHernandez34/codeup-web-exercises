@@ -46,7 +46,7 @@
     // - `colors`: a list of the colors of the rainbow
     // - `randomColor`: contains a single random color value from the list (this
     //                  will contain a different color every time the page loads)
-
+//You can console.log(randomColor) to get the color name that it is randoming //
     var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
     var randomColor = colors[Math.floor(Math.random() * colors.length)];
     console.log(analyzeColor(randomColor));
@@ -61,6 +61,8 @@
      * TODO:
      * Comment out the code above, and refactor your function to use a switch-case statement
      */
+// "return" will stop the function so you dont need  a "break" //
+
     function analyzeColor(color){
         switch (color){
         case "blue":
@@ -81,6 +83,7 @@ console.log(analyzeColor("yellow"))
      * user to your `analyzeColor` function. Alert the return value from your
      * function to show it to the user.
      */
+
     var Colorinput=prompt("enter one of the color defined blue,red,yellow")
     function analyzecolor(Colorinput){
         switch (Colorinput){
@@ -141,6 +144,7 @@ console.log(analyzeColor("yellow"))
         }
         return totalamt - (totalamt * discountRate);
     }
+
     /**
      * TODO:
      * Uncomment the line below to generate a random number between 0 and 5.

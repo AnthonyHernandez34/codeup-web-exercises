@@ -30,5 +30,3 @@ do{
         break;
     }
 }while (allCones >= 1)
-
-//

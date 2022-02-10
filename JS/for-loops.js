@@ -36,6 +36,7 @@
 // 199 is odd
 // ...
 //in order to run this for excerices between 200 - 20
+
     var max = 200
     var min = 20
     for (var i = 0; i < 10; i++) {
@@ -60,8 +61,8 @@
 // 999999999
 //
 
-for(let i = 1; i <= 9; i++){
-    console.log(i.toString().repeat(i));
+   for(let i = 1; i <= 9; i++){
+       console.log(i.toString().repeat(i));
  }
 
 

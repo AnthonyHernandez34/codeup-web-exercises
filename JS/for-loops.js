@@ -36,7 +36,7 @@
 // 199 is odd
 // ...
 //in order to run this for excerices between 200 - 20
-
+function randomnum() {
     var max = 200
     var min = 20
     for (var i = 0; i < 10; i++) {
@@ -47,7 +47,8 @@
             console.log(random + ' ' + "odd")
         }
     }
-
+}
+randomnum()
 //Create a for loop that uses console.log to create the output shown below.
 //
 //
@@ -61,18 +62,20 @@
 // 88888888
 // 999999999
 //
-
-   for(let i = 1; i <= 9; i++){
-       console.log(i.toString().repeat(i));
- }
-
-
+function repeating () {
+    for (let i = 1; i <= 9; i++) {
+        console.log(i.toString().repeat(i));
+    }
+}
+repeating()
 // Create a for loop that uses console.log to create the output shown below.
 //100,95, 90 ,85 ,80 ,75 ,70 ,65 ,60 ,55 ,50, 45 ,40, 35 ,30 ,25 ,20 ,15 , 10 ,5
 //
-
+function loopwork() {
     for (var i = 100; i >= 5; i -= 5) {
-      console.log(i);
+        console.log(i);
     }
+}
+loopwork()
 //
 

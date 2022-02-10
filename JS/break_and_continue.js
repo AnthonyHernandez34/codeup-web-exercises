@@ -10,9 +10,9 @@ for (var i= 0 ; i < 50; i++){
     if(i == userInput){
         console.log("we skipped a number" + ' ' + i )
         continue
+        break
     }
     if(i % 2 != 0){
         console.log("you have entered a possible odd number"+ ' ' + i );
     }
 }
-

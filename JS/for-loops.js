@@ -47,6 +47,7 @@
             console.log(random + ' ' + "odd")
         }
     }
+
 //Create a for loop that uses console.log to create the output shown below.
 //
 //

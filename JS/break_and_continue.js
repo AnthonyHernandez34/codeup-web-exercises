@@ -16,3 +16,6 @@ for (var i= 0 ; i < 50; i++){
         console.log("you have entered a possible odd number"+ ' ' + i );
     }
 }
+
+//
+

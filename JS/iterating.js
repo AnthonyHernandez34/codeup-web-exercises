@@ -53,7 +53,7 @@
 
 
         names.forEach(function (names) {
-        console.log(names);
+        console.log("here is the lovely people " + ' ' + names);
      })
 
 

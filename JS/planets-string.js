@@ -43,7 +43,9 @@
 
 
     var brtagsPlanets = "Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune";
+    planetsString=planetsArray.join('<br>')
     console.log(brtagsPlanets);
+
 
 
      // * BONUS:
@@ -52,6 +54,15 @@
      // * string, and <li> tags around each planet.
      // */
 
-
+    function buildplanetUl(arrOfPlanets){
+        let newstring = <ul/>
+        for (let i = 0; i <arrOfPlanets.length; i++){
+            newstring += <li>
+            newstring += arrOfPlanets[i];
+            newstring += </li>
+        }
+        newstring += <ul/>
+        console.log (newstring)
+    }
 
 })();

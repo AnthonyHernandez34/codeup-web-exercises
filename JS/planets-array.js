@@ -1,57 +1,51 @@
 "use strict";
 
-//build array// examples
-
-// var fruits = []
-// fruits.push("apple")
-// fruits.push("banana")
-// fruits.unshift("cherry")
-// fruits.unshift("lemon")
-// fruits.push("mango")
-// fruits.unshift("pear")
-// console.log(fruits)
-
-//
-// var fruits= ["apple","banana","cherry","lemon","mango","pear"]
-// console.log(fruits);
-// console.log('Sorting the fruits array.');
-// colors.sort();
-
 (function(){
     "use strict";
 
-    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    var planetsArray;
+    var planets = [
+        'Mercury',
+        'Venus',
+        'Earth',
+        'Mars',
+        'Jupiter',
+        'Saturn',
+        'Uranus',
+        'Neptune'
+    ];
 
-    // /**
-    //  * TODO:
-    //  * Convert planetsString to an array, and save it in a variable named
-    //  * planetsArray.
-    //  * console.log planetsArray to check your work
-    //  */
+    /**
+     * TODO:
+     * Read each console log below, and write some javascript code to perform
+     * the step that it describes
+     */
 
-    var planetsArray = planetsString.split( ' , ')
-    console.log(planetsArray);
-    console.log(planetsString.indexOf('Earth'))
+    planets.unshift("The Sun");
+    console.log('Adding "The Sun" to the beginning of the planets array.');
+    console.log(planets);
 
-    //
-   // /**
-   //  * TODO:
-   //  * Create a string with <br> tags between each planet. console.log() your
-   //  * results. Why might this be useful?
-   //  **
+    planets.push("Pluto");
+    console.log('Adding "Pluto" to the end of the planets array.');
+    console.log(planets);
 
-
-    var brtagsPlanets = "Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune";
-    console.log(brtagsPlanets);
-
-
-     // * BONUS:
-     // * Create another string that would display your planets in an undordered
-     // * list. You will need an opening AND closing <ul> tags around the entire
-     // * string, and <li> tags around each planet.
-     // */
+    planets.shift();
+    console.log('Removing "The Sun" from the beginning of the planets array.');
+    console.log(planets);
 
 
+    planets.pop();
+    console.log('Removing "Pluto" from the end of the planets array.');
+    console.log(planets);
 
+    var index = planets.indexOf("Earth");
+    console.log(index);
+    console.log('Finding and logging the index of "Earth" in the planets array.');
+
+    planets.reverse();
+    console.log("Reversing the order of the planets array.");
+    console.log(planets);
+
+    planets.sort();
+    console.log("Sorting the planets array.");
+    console.log(planets);
 })();

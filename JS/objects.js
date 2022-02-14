@@ -14,6 +14,12 @@
      */
 
 
+        var person = {};
+        person.firstname = 'Anthony'
+        person.lastname = 'Hernandez'
+        console.log(person.firstname)
+        console.log(person.lastname)
+
 
     /**
      * TODO:
@@ -24,7 +30,10 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-
+     person.sayHello = function (){
+        return "Hello this is from" +' ' + person.firstname + ' ' + person.lastname + ' ! '
+    }
+console.log(person.sayHello())
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -39,11 +48,25 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+
+    var shoppers = [
+        {name: 'Cameron', amount: 180 * .12},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+    shoppers.forEach(function (shopper) {
+        var discount = shopper.amount * .50
+        var totalamount = shopper.amount - discount;
+
+        if (shopper.amount > 15) {
+           console.log(shopper.name + ' ' + 'total undiscounted price ' + ' ' + shopper.amount + ' ' +
+           'amt we discounted ' + ' '  + discount +'  ' + 'Total check out amt'+ ' ' + totalamount)
+
+        } else {
+          return "you aint getting any discount"
+        }
+    });
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -57,6 +80,50 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+        var books = []
+        var books = [
+            {
+                Titleofbook: "How to code for the lesser human",
+                author: {
+                    firstName: "Anthony",
+                    lastName: "Hernandez"
+                }
+            },
+            {
+                Titleofbook: "How to make money off of coding",
+                author: {
+                    firstName: "Anthony",
+                    lastName: "Winkleburg"
+                }
+            },
+            {
+                Titleofbook: "How to grow hair to look more mondern",
+                author: {
+                    firstName: "Anthony",
+                    lastName: "Everlast"
+                }
+            },
+            {
+                Titleofbook: "How to not look like you are playing video games in zoom",
+                author: {
+                    firstName: "Anthony",
+                    lastName: "Strong"
+                }
+            },
+            {
+                Titleofbook: "Dont mess with codeUp",
+                author: {
+                    firstName: "Anthony",
+                    lastName: "Cobra"
+                }
+            },
+        ]
+    console.log(books[3].Titleofbook)
+    console.log(books[3].author.firstName);
+    console.log(books[3].author.lastName);
+    console.log(alert(typeof books))
+
 
     /**
      * TODO:
@@ -83,6 +150,10 @@
      *      ...
      */
 
+    books.forEach(function (book, index) {
+        console.log(" Book Barcode " + index + " Scan " + book.Titleofbook + " Writer: " + book.author.firstName + " " + book.author.lastName);
+    })
+
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -98,3 +169,41 @@
 
 
 
+//Example used for most help with worksheet//
+//
+// function Person(name, age, sex) {
+//     this.name = name;
+//     this.age = age;
+//     this.sex = sex;
+//     const rand = new Person('Rand McKinnon', 33, 'M');
+//     const ken = new Person('Ken Jones', 39, 'M');
+// }
+
+// trying to use different method for grocery store work//
+
+
+// var Customer0 = {
+//     name: "Cameron",
+//     totalbill: 180,
+//     discountbill: ""
+// }
+// var Customer1 = {
+//     name: "Ryan",
+//     totalbill: 21,
+//     discountbill: "250"
+// }
+// var Customer2 = {
+//     name: "Ryan",
+//     totalbill: 21,
+//     discountbill: "320"
+// }
+// function sayHowmuch() {
+//     console.log(`Hello, this is how much you owe ${this.name}`)
+// }
+//
+// // add sayHi function to both objects
+// Customer0.sayHowmuch = sayHowmuch();
+// Customer1.sayHowmuch = sayHowmuch();
+// Customer2.sayHowmuch= sayHowmuch()
+// Customer0.sayHowmuch(); // Hello, my name is John'
+// Customer1.sayHowmuch(); // Hello, my name is Ben'

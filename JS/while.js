@@ -30,3 +30,9 @@ do{
         break;
     }
 }while (allCones >= 1)
+
+
+
+let randomNum = Math.random()
+let rangedNum = Math.floor((randomNum * (100-20)+ 1 ) + 20)
+console.log(rangedNum)

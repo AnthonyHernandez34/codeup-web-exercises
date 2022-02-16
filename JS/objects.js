@@ -14,11 +14,11 @@
      */
 
 
-        var person = {};
-        person.firstname = 'Anthony'
-        person.lastname = 'Hernandez'
-        console.log(person.firstname)
-        console.log(person.lastname)
+    var person = {};
+    person.firstname = 'Anthony'
+    person.lastname = 'Hernandez'
+    console.log(person.firstname)
+    console.log(person.lastname)
 
 
     /**
@@ -30,10 +30,10 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-     person.sayHello = function (){
-        return "Hello this is from" +' ' + person.firstname + ' ' + person.lastname + ' ! '
+    person.sayHello = function () {
+        return "Hello this is from" + ' ' + person.firstname + ' ' + person.lastname + ' ! '
     }
-console.log(person.sayHello())
+    console.log(person.sayHello())
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -58,12 +58,12 @@ console.log(person.sayHello())
         var discount = shopper.amount * .50
         var totalamount = shopper.amount - discount;
 
-        if (shopper.amount > 15) {
-           console.log(shopper.name + ' ' + 'total undiscounted price ' + ' ' + shopper.amount + ' ' +
-           'amt we discounted ' + ' '  + discount +'  ' + 'Total check out amt'+ ' ' + totalamount)
+        if (shopper.amount > 200) {
+            console.log(shopper.name + ' ' + 'total undiscounted price ' + ' ' + shopper.amount + ' ' +
+                'amt we discounted ' + ' ' + discount + '  ' + 'Total check out amt' + ' ' + totalamount)
 
         } else {
-          return "you aint getting any discount"
+            return "you aint getting any discount you didnt spend more then 200$"
         }
     });
 
@@ -81,44 +81,44 @@ console.log(person.sayHello())
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-        var books = []
-        var books = [
-            {
-                Titleofbook: "How to code for the lesser human",
-                author: {
-                    firstName: "Anthony",
-                    lastName: "Hernandez"
-                }
-            },
-            {
-                Titleofbook: "How to make money off of coding",
-                author: {
-                    firstName: "Anthony",
-                    lastName: "Winkleburg"
-                }
-            },
-            {
-                Titleofbook: "How to grow hair to look more mondern",
-                author: {
-                    firstName: "Anthony",
-                    lastName: "Everlast"
-                }
-            },
-            {
-                Titleofbook: "How to not look like you are playing video games in zoom",
-                author: {
-                    firstName: "Anthony",
-                    lastName: "Strong"
-                }
-            },
-            {
-                Titleofbook: "Dont mess with codeUp",
-                author: {
-                    firstName: "Anthony",
-                    lastName: "Cobra"
-                }
-            },
-        ]
+    var books = []
+    var books = [
+        {
+            Titleofbook: "How to code for the lesser human",
+            author: {
+                firstName: "Anthony",
+                lastName: "Hernandez"
+            }
+        },
+        {
+            Titleofbook: "How to make money off of coding",
+            author: {
+                firstName: "Anthony",
+                lastName: "Winkleburg"
+            }
+        },
+        {
+            Titleofbook: "How to grow hair to look more mondern",
+            author: {
+                firstName: "Anthony",
+                lastName: "Everlast"
+            }
+        },
+        {
+            Titleofbook: "How to not look like you are playing video games in zoom",
+            author: {
+                firstName: "Anthony",
+                lastName: "Strong"
+            }
+        },
+        {
+            Titleofbook: "Dont mess with codeUp",
+            author: {
+                firstName: "Anthony",
+                lastName: "Cobra"
+            }
+        },
+    ]
     console.log(books[3].Titleofbook)
     console.log(books[3].author.firstName);
     console.log(books[3].author.lastName);
@@ -165,7 +165,30 @@ console.log(person.sayHello())
      *   `showBookInfo` function.
      */
 
+    //ry did the Bonus //
+
+//     function createBook(title, autherName){
+//         let autherNameSplit
+//         return{
+//             title: title,
+//             author: {
+//                 firstName:autherNameSplit[0],
+//                 lastname:autherNameSplit[1]
+//             }
+//         }
+//     }
+// addBook(createBook("clean code", "bob martin"));
+//     function addBook(book){
+//         books.push(book)
+//     }
+//
 })();
+
+
+
+
+
+
 
 
 

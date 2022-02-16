@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Create an object representing a person. It should have properties representing:
+    //     names (an array of strings)
+    // date of birth
+    // occupation
+    // Hard code some values in that object, then log it and its properties to the console
+
+
+
+    // var person =
+    //     {
+    //         name: "Anthony,casey,ben",
+    //         age: 30,
+    //         weight: 200,
+    //         dob: "july 16, 1991",
+    //         height: "5 ft 7"
+    //
+    //     }
+    //
+    // console.log(person.name)
+    // }
+    // function person(names,dob ,state ){
+    //     this.names = names
+    //     this.dob= dob
+    //     this.state= state
+    // }
+
+
+
+    // Create an object representing a person’s contact info. It should have:
+    //     phone number
+    // street address
+    // state
+    // postal code
+    // email address
+
+
+    let contactinfo =
+        {
+            names: 'Anthony',
+            phonenumber: 9365889047,
+            streetaddress: ['123 Anywhere Lane'],
+            state: "Beverly Hills, Ca 90210",
+            postalcode: 77304,
+            emailaddress: "ants.hernandez@gmail.com"
+
+        }
+
+        function Contactinfo(names,streetaddress ,state ){
+        this.names = names;
+        this.streetaddress= streetaddress;
+        this.state= state;
+        }
+
+        let Contactinfo2= new Contactinfo(
+        "Anthony",
+        ['123 Anywhere Lane'],
+        "Beverly Hills, Ca 90210"
+    )
+
+
+    // // Defines a contact info object
+    // function ContactInfo(phoneNumber, streetAddress, city, state, postalCode, emailAddress){
+    //     this.phoneNumber = phoneNumber;
+    //     this.streetAddress = streetAddress;
+    //     this.city = city;
+    //     this.state = state;
+    //     this.postalCode = postalCode;
+    //     this.emailAddress = emailAddress;
+    // }
+    // // Defines a person object
+    // function Person(names, occupation, dob, contactInfo) {
+    //     this.names = names;
+    //     this.occupation = occupation;
+    //     this.dob = dob;
+    //     this.contactInfo = contactInfo;
+    // }
+    // // makes a new person object instance (by invoking the constructor)
+    // let person2 = new Person(
+    //     ["Casey", "J", "Edwards"],
+    //     "Cat Herder / Firefighter",
+    //     "11.30.1989",
+    //     new ContactInfo(
+    //         '123.456.7890',
+    //         '123 Anywhere Ln',
+    //         'Beverly Hills',
+    //         'CA',
+    //         '90210',
+    //         'nope@no-no-no.no'));
+    //
+    // console.log(person2.contactInfo.emailAddress);
+
+</script>
+
+</body>
+</html>

@@ -16,6 +16,8 @@
  *
  * console.log 'helloMessage' to check your work
  */
+
+
    var myNameis= prompt()
    console.log ("hello "+' '+ myNameis)
    function sayHello(name){
@@ -30,6 +32,7 @@
 * variable to the 'sayHello' function. You should see the same output in the
 * console.
 */
+
 var helloMessage = sayHello()
 function helloMessage(name){
     console.log (helloMessage)
@@ -118,6 +121,9 @@ console.log(totalamt * 40)
  // *
  // * > applyDiscount(45.99, 0.12) // 40.4712
  // */
+
+
+
 var price=prompt("this is how much you owe")
 var quantity = prompt("items that will be discounted")
 var total = quantity * price

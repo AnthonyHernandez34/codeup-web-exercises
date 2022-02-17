@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register with Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3 {
+            color: black;
+            text-decoration: unset;
+        }
+
+        body {
+            background: blanchedalmond;
+            font-family: 'Akaya Telivigala', cursive;
+            background-image: url("IMG/paper2.jpg");
+            background-repeat: no-repeat;
+            background-size: 2000px 1000px;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        a:visited {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<h1>Veridian Dynamics Registration</h1>
+<p><em><strong>Your partner in quality.</strong></em></p>
+<hr>
+<form method="POST" action="https://request-inspector.glitch.me/">
+    <label for="email"><strong>Email</strong></label>
+    <input id="email" name="email" type="text" placeholder="Enter Email">
+    <br>
+    <label for="password"><strong>Password</strong></label>
+    <input id="password" name="password" type="password" placeholder="********************************">
+    <br>
+    <label for="bio"><strong> What should we know about you </strong></label>
+    <br>
+    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Tell us a little bit about yourself!"></textarea>
+    <br>
+    <h3>How did you hear about us?</h3>
+    <hr>
+    <input type="checkbox" name="question_1" value="Billboard" id="Billboard">
+    <label for="Billboard">Billboard</label><br>
+    <input type="checkbox" name="question_2" value="Radio Advertisement" id="Radio-Advertisement">
+    <label for="Radio-Advertisement">Radio Advertisement</label><br>
+    <input type="checkbox" name="question_3" value="Internet Advertisement" id="Internet Advertisement">
+    <label for="Internet Advertisement">Internet Advertisement</label><br>
+    <input type="checkbox" name="advertisement_question_1" value="Other" id="Other">
+    <label for="Other">Other</label>
+    <br>
+    <br>
+    <hr>
+    <label for="browser">Internet Browser</label>
+    <select id="browser" name="Internet-Browser">
+        <option value="Firefox">Firefox</option>
+        <option value="internet Explore">Internet Explore</option>
+        <option value="Chrome" selected>Chrome</option>
+    </select>
+    <br>
+    <br>
+    <button type="submit">Submit the form</button>
+    <br>
+    <br>
+    <audio controls autoplay="auto">
+        Your browser does not support the audio element.
+        <source src=".hidden.html/bensound-tomorrow.mp3" type="audio/ogg">
+    </audio>
+
+</form>
+</body>
+</html>

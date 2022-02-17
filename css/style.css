@@ -1,0 +1,25 @@
+h1,h2,.fancy-header {
+    color: purple; /* single line comment */
+    text-decoration: underline;
+}
+ body {
+     background: white;
+     font-family: "Roboto";
+ }
+
+ul {
+    list-style: circle;
+}
+
+th, td {
+    padding: 2px;
+}
+
+th {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: blue;
+}

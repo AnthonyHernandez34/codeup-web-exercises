@@ -36,7 +36,7 @@ function plotData(data) {
                 }
             }
         },
-        padding: { right: 50 }
+        padding: {right: 50}
     });
 }
 

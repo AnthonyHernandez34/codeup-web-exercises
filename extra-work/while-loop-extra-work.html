@@ -6,92 +6,97 @@
 </head>
 <body>
 <script>
-//1. Write a function called `add(num1, num2)` which returns the sum of a and b
+    //1. Write a function called `add(num1, num2)` which returns the sum of a and b
 
 
-  function add(num1,num2){
-      var num1="a"
-      var num2="b"
-      return num1 +' '+ num2
-  }
-console.log(add())
-
-//2. Write a function named `square(numToSqr)` which takes in a number (`numToSqr`) and returns the number multiplied by itself
-
-
-  var numTosqr= prompt()
-  var totalnum= numTosqr * numTosqr
-  function square (numToSqr){
-      alert("now we will multiply it now")
-      return totalnum
-  }
-console.log(square())
-
-
-//3.Write a function called `sumOfSquares(a, b)`.
-// You should find the square of `a`, then the square of `b`.
-// Invoke `add(num1, num2)` and pass the new squared values in as arguments.
-
-function sumOfSquares(a, b){
-  var a = 100
-    console.log(Math.sqrt(a));
-  var b = 9
-    console.log(Math.sqrt(b))
-  return add()
-}
-console.log(sumOfSquares() +' '+ add())
-
-
-//4. Write a function named `getFizzBuzz(startingNum)` which performs the following actions:
-//If `startingNum` is divisible by 3
-//console log `"fizz"`
-//Else, if `startingNum` is divisible by 5
-//console log `"buzz"`
-//If `startingNum` is divisible by 3 ***AND*** divisible by 5
-//return* a string which says `"FIZZ BUZZ"`
-
-function getFizzbuzz(startingNum){
-      startingNum = 25
-
-      if (startingNum % 3 === 0 ){
-       console.log("fizz")
-
-     }else if (startingNum % 5 === 0){
-       console.log("buzz")
-
-     }if (startingNum =( 3 % 5)){
-      return startingNum + "FIZZ BUZZ"
+    function add(num1, num2) {
+        var num1 = "a"
+        var num2 = "b"
+        return num1 + ' ' + num2
     }
-}
-console.log(getFizzbuzz())
 
-//
-//Define a function named `getPassword()` which performs the following actions:
-//Using `prompt()`, `alert()`, variables, and a while-loop, ask the user to input
+    console.log(add())
 
-var password = "codeUp"
-var isCorrect = false
-var attemptsmade = ""
-function getPassword() {
-    while (!isCorrect) {
-        attemptsmade = prompt("Please enter the proper password now")
-        isCorrect = attemptsmade === password
-        if (!isCorrect) {
-            alert("you have entered the wrong password please move foward in the proccess")
+    //2. Write a function named `square(numToSqr)` which takes in a number (`numToSqr`) and returns the number multiplied by itself
+
+
+    var numTosqr = prompt()
+    var totalnum = numTosqr * numTosqr
+
+    function square(numToSqr) {
+        alert("now we will multiply it now")
+        return totalnum
+    }
+
+    console.log(square())
+
+
+    //3.Write a function called `sumOfSquares(a, b)`.
+    // You should find the square of `a`, then the square of `b`.
+    // Invoke `add(num1, num2)` and pass the new squared values in as arguments.
+
+    function sumOfSquares(a, b) {
+        var a = 100
+        console.log(Math.sqrt(a));
+        var b = 9
+        console.log(Math.sqrt(b))
+        return add()
+    }
+
+    console.log(sumOfSquares() + ' ' + add())
+
+
+    //4. Write a function named `getFizzBuzz(startingNum)` which performs the following actions:
+    //If `startingNum` is divisible by 3
+    //console log `"fizz"`
+    //Else, if `startingNum` is divisible by 5
+    //console log `"buzz"`
+    //If `startingNum` is divisible by 3 ***AND*** divisible by 5
+    //return* a string which says `"FIZZ BUZZ"`
+
+    function getFizzbuzz(startingNum) {
+        startingNum = 25
+
+        if (startingNum % 3 === 0) {
+            console.log("fizz")
+
+        } else if (startingNum % 5 === 0) {
+            console.log("buzz")
+
+        }
+        if (startingNum = (3 % 5)) {
+            return startingNum + "FIZZ BUZZ"
         }
     }
-}
-getPassword()
-//
-// Write a function named `getMeaningOfLife` which accepts one parameter, `meaningfulNum`.
-// This function will use a ***while loop*** to compare its current number (a variable named `counter`)
-// against the `meaningfulNum`.
-// *While* the `counter` is not equivalent to the `meaningfulNum`, continue the loop.
-// Once that condition is broken, console log a string telling the user `"The meaning of life, the universe, and everything is [your meaningful number]"`
-//
 
+    console.log(getFizzbuzz())
 
+    //
+    //Define a function named `getPassword()` which performs the following actions:
+    //Using `prompt()`, `alert()`, variables, and a while-loop, ask the user to input
 
+    var password = "codeUp"
+    var isCorrect = false
+    var attemptsmade = ""
+
+    function getPassword() {
+        while (!isCorrect) {
+            attemptsmade = prompt("Please enter the proper password now")
+            isCorrect = attemptsmade === password
+            if (!isCorrect) {
+                alert("you have entered the wrong password please move foward in the proccess")
+            }
+        }
+    }
+
+    getPassword()
+    //
+    // Write a function named `getMeaningOfLife` which accepts one parameter, `meaningfulNum`.
+    // This function will use a ***while loop*** to compare its current number (a variable named `counter`)
+    // against the `meaningfulNum`.
+    // *While* the `counter` is not equivalent to the `meaningfulNum`, continue the loop.
+    // Once that condition is broken, console log a string telling the user `"The meaning of life, the universe, and everything is [your meaningful number]"`
+    //
 
 
 </script>

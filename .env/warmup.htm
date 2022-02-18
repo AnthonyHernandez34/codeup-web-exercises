@@ -159,9 +159,14 @@
     // Objects?
     // To test, simply invoke your function inside a console.log and pass in values of different types (see above) as arguments
 
-    function isNumber(x){
-        return (!isNaN(parseFloat(x)));
+    function isNumber(maybenum){
+        return (!isNaN(parseFloat(maybenum)));
     }
+console.log(isNumber(String))
+console.log(isNumber("duck"))
+console.log(isNumber("12"))
+
+
 
 
 

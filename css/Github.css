@@ -1,31 +1,21 @@
 
 h1, h2, .fancy-header {
-    color: purple; /* single line comment */
+    color: black; /* single line comment */
     text-decoration: underline;
 }
 
-h1, h5 {
-    text-align: center;
-}
+
 
 body {
-    background: blanchedalmond;
+    background-image: url("./IMG/boss.jpg");
+    background: whitesmoke;
     font-family: 'Akaya Telivigala', cursive;
-    background-image: url("IMG/boss.jpg");
     background-repeat: no-repeat;
     background-size: 2000px 1000px;
 }
 
 ul {
     list-style: circle;
-}
-
-
-table {
-    table-layout: fixed;
-    width: 20%;
-    border-collapse: collapse;
-    border: 5px solid black;
 }
 
 tbody td {

@@ -7,11 +7,10 @@ h1, h2, .fancy-header {
 
 
 body {
-    background-image: url("./IMG/boss.jpg");
     background: whitesmoke;
     font-family: 'Akaya Telivigala', cursive;
-    background-repeat: no-repeat;
-    background-size: 2000px 1000px;
+    background-image: url("../IMG/boss.jpg");
+    background-size: cover
 }
 
 ul {

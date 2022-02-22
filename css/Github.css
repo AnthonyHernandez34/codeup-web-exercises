@@ -10,11 +10,17 @@ body {
     background: whitesmoke;
     font-family: 'Akaya Telivigala', cursive;
     background-image: url("../IMG/boss.jpg");
-    background-size: cover
+    background-size: cover;
+}
+{
+    box-sizing: border-box;
 }
 
 ul {
-    list-style: circle;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* made unordered list a flex container */
 }
 
 tbody td {

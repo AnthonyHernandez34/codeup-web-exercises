@@ -159,12 +159,29 @@
     // Objects?
     // To test, simply invoke your function inside a console.log and pass in values of different types (see above) as arguments
 
-    function isNumber(maybenum){
-        return (!isNaN(parseFloat(maybenum)));
-    }
-console.log(isNumber(String))
-console.log(isNumber("duck"))
-console.log(isNumber("12"))
+//     function isNumber(maybenum){
+//         return (!isNaN(parseFloat(maybenum)));
+//     }
+// console.log(isNumber(String))
+// console.log(isNumber("duck"))
+// console.log(isNumber("12"))
+function removeALL(anrr, valuleToRemove) {
+    let filteredArr = []
+        anrr.forEach(function (ele) {
+            if (vauleToRemove !== ele) {
+                filteredArr.push(ele)
+            }
+        });
+    return filteredArr;
+}
+
+    var bugs = ["bat", "ant", "bear", "ant", "cat", "bear", "typo", "reference error", "type error"];
+
+    console.log(removeALL(bugs, "ant"));
+    // should print
+
+
+
 
 
 

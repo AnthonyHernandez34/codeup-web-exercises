@@ -1,0 +1,35 @@
+@media all {
+    #main-jumbotron{
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+    }
+    #main-jumbotron{
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("![](../IMG/pizza.png)");
+    }
+
+    #jumbotron-container{
+        color: white;
+    }
+
+    Body {
+        font-weight: normal;
+        font-size: larger;
+        font-family: Impact;
+        color: black;
+    }
+
+    li {
+        font: bolder;
+        color: red;
+        font-family: Impact;
+    }
+    h2{
+        font-family: "Comic Sans MS";
+    }
+    h1{
+        font-size: 100px;
+        color: black;
+        font-weight: bolder;
+    }
+}

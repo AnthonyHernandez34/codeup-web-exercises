@@ -1,0 +1,225 @@
+/*Start of Style For Nav bar and circle colors transp*/
+
+body {
+    font-family: 'Abel', sans-serif;
+    background: #d9e2ef;
+    /*Background color code is red*/
+}
+
+.wrapper {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+:root {
+    --red: #e6563b;
+    --green: #7cb06c;
+    --yellow: #EB9D3A;
+    --blue: #00aba9;
+}
+
+/*Start of header and title styles*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Anton', sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+    font-family: "Audiowide", sans-serif;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.75em;
+    font-family: "Audiowide", sans-serif;
+}
+
+.brand-name {
+    font-size: 1.75em;
+}
+
+/*End of title and header sizes */
+
+/*:root can be useful for declaring global CSS variables*/
+
+/*For nav Bar white area*/
+.nav-background {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 59px;
+    width: 100%;
+    top: 37px;
+    z-index: -1000;
+}
+
+
+/*Ending For style on nav section*/
+
+.tweet i {
+    font-size: 2em;
+    margin-right: .3em;
+    position: relative;
+    top: .4em;
+    color: rgb(27 160 239);
+}
+
+/*Large Circles for nav bar*/
+.circle {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    margin: 1vw;
+}
+
+.circle h6 {
+    margin: 0;
+    font-family: "Audiowide", sans-serif;
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+
+/*Ending of Style for large circles*/
+
+
+/*Small circles for images 4 div containers*/
+
+.small-circles {
+    height: 18px;
+    width: 18px;
+    border-radius: 18px;
+    font-size: 8px;
+    line-height: 18px;
+    font-family: 'Anton', sans-serif;
+    margin-left: 1em;
+}
+
+.small-circles span {
+    position: relative;
+    top: 1px;
+}
+
+/*Ending Style for Small circles*/
+
+/*Fixing Images sizing connected to HTML Invisible 100*/
+/*Start of Image Work Everything here effect Style of image*/
+
+.images-ipad {
+    background-image: url("../IMG/ipad.jpg")
+}
+
+.images-macs {
+    background-image: url("../IMG/macbook.jpg")
+}
+
+.images-man {
+    background-image: url("../IMG/man.jpg")
+}
+
+.images-security {
+    background-image: url("../IMG/security.jpg")
+}
+
+
+.images {
+    max-width: 100%;
+    border: .5em solid black;
+    border-radius: 4px;
+    background-size: auto;
+
+}
+
+.small-images {
+    border: .2em solid black;
+    border-radius: 1px;
+    background-size: 50%;
+}
+
+/*End Of Image Style Work*/
+
+/*For select work*/
+.sub-title {
+    text-align: center;
+    margin-top: 5em;
+}
+
+
+/*Breaking point for all Media in this Section */
+
+@media screen and (min-width: 768px) {
+    .sub-title {
+        margin-top: 2em;
+    }
+
+    hr {
+        width: 55%
+    }
+}
+
+@media screen and ( min-width: 992px) {
+    .sub-title {
+        text-align: left;
+    }
+
+    hr {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .wrapper .row {
+        margin-top: 3em;
+    }
+
+    .custom-card {
+        padding-right: 3em;
+    }
+
+    hr {
+        width: 100%
+    }
+}
+
+/*End Of Media Section*/
+
+
+/*https://designmodo.com/bootstrap-5-utilities/*/
+/*Bootstrap index keywords, proper usage*/

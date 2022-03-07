@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <ul id="pets">
+
+    </ul>
+</div>
+
+<script>
+    let pets = ["bubba", "scooby", "dog", "cat"]
+
+    let petlist = document.getElementById("pets")
+
+    for (let i = 0; i < pets.length; i++) {
+
+        let li = document.createElement("li")
+
+        li.innerText = pets[i];
+
+        petlist.appendChild(li);
+    }
+
+</script>
+</body>
+</html>

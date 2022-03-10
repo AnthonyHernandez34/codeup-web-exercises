@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://fonts.cdnfonts.com/css/rosewell-black-rgh" rel="stylesheet">
+
+
+</head>
+<body>
+<nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <ul class="nav justify-content-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                   aria-expanded="false">Choose Your Roast</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Light Roast</a></li>
+                    <li><a class="dropdown-item" href="#">Medium Roast</a></li>
+                    <li><a class="dropdown-item" href="#">Dark Roast</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Special Roast</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                   aria-expanded="false">Come See Us</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Dallas</a></li>
+                    <li><a class="dropdown-item" href="#">Austin</a></li>
+                    <li><a class="dropdown-item" href="#">San Antonio</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Feel Like Franchising?</a></li>
+                </ul>
+            </li>
+
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="Images/coffee%20cup%202.png" alt="" width="70" height="50">
+                    </a>
+                </div>
+            </nav>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Order Online</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="checkout-page.html">Shopping Cart</a>
+            </li>
+        </ul>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Shopping Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+            </div>
+
+            <div class="row" id="chkt">
+                <div class="col-75">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Son Goku Kakarotto">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="goku@saiyan.com">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="adr" name="address" placeholder="58n 018 439 East District">
+                                <label for="city"><i class="fa fa-institution"></i> East District</label>
+                                <input type="text" id="city" name="city" placeholder="New York">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state" placeholder="NY">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="zip">Zip</label>
+                                        <input type="text" id="zip" name="zip" placeholder="10001">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                    <img src="Images/visa.png" height="30px" width="45px">
+                                    <img src="Images/mc.png" height="30px" width="45px">
+                                    <img src="Images/amex.png" height="30px" width="45px">
+                                    <img src="Images/discover.png" height="30px" width="45px">
+                                </div>
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="Son Goku Kakarotto">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                <label for="expmonth">Exp Month</label>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Exp Year</label>
+                                        <input type="text" id="expyear" name="expyear" placeholder="2025">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="000">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                        </label>
+                        <input type="submit" value="Continue to checkout" class="btn">
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="container">
+                        <h4>Shopping Cart <span class="price" style="color:black"><i
+                                class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+                        <p><a href="#">Vageta's Revenge Dark Roast</a> <span class="price">$15</span></p>
+                        <p><a href="#">Aizawa Knockout Special</a> <span class="price">$8</span></p>
+                        <p><a href="#">Light Light Roast</a> <span class="price">$5</span></p>
+                        <p><a href="#">Kamado Medium Blend</a> <span class="price">$5</span></p>
+                        <hr>
+                        <p>Grand Total <span class="price" style="color:black"><b>$33</b></span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!--    Start of Search foe Coffee Area-->
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--End of Coffee Search Area-->
+
+
+<!--Div Content Overlays for boxes-->
+<div class="cont s--inactive">
+    <!-- cont inner start -->
+    <div class="cont__inner">
+        <!-- el start -->
+        <div class="el">
+            <div class="el__overflow">
+                <div class="el__inner">
+                    <div class="el__bg"></div>
+                    <div class="el__preview-cont">
+                        <h2 class="el__heading">Vageta's Revenge</h2>
+                    </div>
+                    <div class="el__content">
+                        <div class="el__text"><h1>Dragon ball z</h1></div>
+                        <div class="el__close-btn"></div>
+
+                        <!--                     Select menu will start here-->
+                        <br>
+                        <figure class="text-center">
+                            <blockquote class="blockquote">
+                                <p>1/4 cup maple syrup
+                                    1/4 cup pecan butter
+                                    2 tablespoons brown sugar, packed
+                                    1/2 tablespoon unsalted butter
+                                    1/3 cup heavy cream
+                                    1 teaspoon pure vanilla extract</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Ingredients <cite title="Source Title">DRAGON BALL Z </cite>
+                            </figcaption>
+                        </figure>
+
+
+                        <!--                        Ends here-->
+                    </div>
+                </div>
+            </div>
+            <div class="el__overflow">
+                <div class="el__index-back">SAIYAN</div>
+                <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="SAIYAN">1</div>
+                </div>
+            </div>
+        </div>
+        <!-- el end -->
+
+        <!-- el start -->
+        <div class="el">
+            <div class="el__overflow">
+                <div class="el__inner">
+                    <div class="el__bg"></div>
+                    <div class="el__preview-cont">
+                        <h2 class="el__heading">Aizawa Knockout Special</h2>
+                    </div>
+                    <div class="el__content">
+                        <div class="el__text"><h1>My Hero Academia</h1></div>
+                        <div class="el__close-btn"></div>
+
+                        <!--                     Select menu will start here-->
+                        <figure class="text-center">
+                            <blockquote class="blockquote">
+                                <p>1 scoop vanilla gelato, or ice cream
+                                    2 ounces hot espresso, or strongly brewed hot coffee
+                                    Grated chocolate, for garnish</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Ingredients <cite title="Source Title">My Hero Academia </cite>
+                            </figcaption>
+                        </figure>
+
+                        <!--                        Ends here-->
+                    </div>
+                </div>
+            </div>
+            <div class="el__overflow">
+                <div class="el__index-back">HERO</div>
+                <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="HERO">2</div>
+                </div>
+            </div>
+        </div>
+        <!-- el end -->
+        <!-- el start -->
+        <div class="el">
+            <div class="el__overflow">
+                <div class="el__inner">
+                    <div class="el__bg"></div>
+                    <div class="el__preview-cont">
+                        <h2 class="el__heading">Light Light Roast</h2>
+                    </div>
+                    <div class="el__content">
+                        <div class="el__text"><h1>Death Note</h1></b></div>
+                        <div class="el__close-btn"></div>
+
+
+                        <!--                     Select menu will start here-->
+                        <br>
+                        <br>
+                        <figure class="text-center">
+                            <blockquote class="blockquote">
+                                <p>1/4 cup finely ground coffee, or amount needed for pot
+                                    1 1/2 cups water, or amount needed for pot
+                                    1/4 cup granulated sugar</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Ingredients <cite title="Source Title">Death Note</cite>
+                            </figcaption>
+                        </figure>
+
+
+                        <!--                        Ends here-->
+                    </div>
+                </div>
+            </div>
+            <div class="el__overflow">
+                <div class="el__index-back">VIGILANTE</div>
+                <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="VIGILANTE">3</div>
+                </div>
+            </div>
+        </div>
+        <!-- el end -->
+        <!-- el start -->
+        <div class="el">
+            <div class="el__overflow">
+                <div class="el__inner">
+                    <div class="el__bg"></div>
+                    <div class="el__preview-cont">
+                        <h2 class="el__heading">Kamado Medium Blend</h2>
+                    </div>
+                    <div class="el__content">
+                        <div class="el__text"><h1>Demon Slayer</h1></div>
+                        <div class="el__close-btn"></div>
+
+                        <!--                     Select menu will start here-->
+                        <figure class="text-center">
+                            <blockquote class="blockquote">
+                                <p>4 tablespoons drip-ground coffee
+                                    2 tablespoons chicory
+                                    1/4 teaspoon salt, optional
+                                    4 cups water, filtered
+                                    1 teaspoon sugar, optional</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Ingredients <cite title="Source Title">Demon Slayer</cite>
+                            </figcaption>
+                        </figure>
+
+                        <!--                        Ends here-->
+                    </div>
+                </div>
+            </div>
+            <div class="el__overflow">
+                <div class="el__index-back">SLAYER</div>
+                <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="SLAYER">4</div>
+                </div>
+            </div>
+        </div>
+        <!-- el end -->
+
+        <!-- el start -->
+        <div class="el">
+            <div class="el__overflow">
+                <div class="el__inner">
+                    <div class="el__bg"></div>
+                    <div class="el__preview-cont">
+                        <h2 class="el__heading">Jaegerists</h2>
+                    </div>
+                    <div class="el__content">
+                        <div class="el__text"><h1>Attack On Titan</h1></div>
+                        <div class="el__close-btn"></div>
+                        <!--                     Select menu will start here-->
+                        <br>
+                        <br>
+                        <br>
+                        <figure class="text-center">
+                            <blockquote class="blockquote">
+                                <p>the Espresso
+
+                                    2 tablespoons finely ground dark roast coffee
+                                    4 ounces water
+                                    For the Foamed Milk
+
+                                    4 ounces milk</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Ingredients <cite title="Source Title">Attack On Titan</cite>
+                            </figcaption>
+                        </figure>
+                        <!--                        Ends here-->
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="el__overflow">
+                <div class="el__index-back">TITAN</div>
+                <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="TITAN">5</div>
+                </div>
+            </div>
+        </div>
+        <!-- el end -->
+    </div>
+    <!-- cont inner end -->
+</div>
+<!--start of Footer-->
+<footer class="bg-dark text-center text-white footer">
+    <!-- Grid container -->
+    <p>Anime Coffee CO, Is along standing community pillar brought from the ancient area of narnia to everyone in
+        America were you too will be free to enjoy a hot or cold cup of love and tinder anime style coffee.</p>
+    <p>We welcome everyone to come and enjoy the love of Anime and Friendship with us, let us know if we can make your
+        visit anymore enjoyable.</p>
+    <div class="container p-4 pb-0">
+        <!-- Section: Form -->
+        <section class="">
+            <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Sign up for our newsletter</strong>
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-5 col-12">
+                        <!-- Email input -->
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" id="form5Example29" class="form-control"/>
+                            <label class="form-label" for="form5Example29">Email address</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-auto">
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-outline-light mb-4">
+                            Subscribe
+                        </button>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </form>
+        </section>
+        <!-- Section: Form -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+

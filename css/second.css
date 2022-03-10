@@ -1,202 +1,171 @@
-body {
-    background-image:url("../IMG/coffee-around-the-world.jpg"); ;
-    background-size: cover;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-/*End of Background style*/
-h2 {
-    color: black;
-    background-color:navajowhite;
-    opacity: 75%;
-    font-family: Impact;
-}
+@media all {
 
-h1 {
-    color: silver;
-    background-color: black;
-    opacity: 70%;
-    font-family: Impact;
-
-}
-
-
-
-
-
-.cont {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    padding: 80px 70px;
-}
-/*Fixes size of div cards*/
-.cont__inner {
-    position: relative;
-    height: 75%;
-    width:auto;
-}
-
-.cont__inner:hover .el__bg:after {
-    opacity: 1;
-}
-/*Card positisons */
-.el {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 19.2%;
-    height: 100%;
-    background-image: url("../IMG/coffee2.jpg");
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s;
-    will-change: transform, width, opacity;
-}
-
-.el:not(.s--active) {
-    cursor:crosshair;
-}
-/*Header for cards*/
-.cont.s--inactive .el__preview-cont {
-    opacity: 0;
-    transform: translateY(10px);
-}
-
-.el__text {
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: center;
-
-}
-/*end of headers for cards*/
-/* Everything Below effects the numbers */
-
-.el__index {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    bottom: -80px;
-    width: 100%;
-    height: 100%;
-    min-height: 250px;
-    text-align: center;
-    font-size: 4vw;
-    font-family: Impact;
-    line-height: 0.85;
-    font-weight: bold;
-    transition: transform 0.5s, opacity 0.3s 1.4s;
-    transform: translate3d(0, 1vw, 0);
-}
-
-.el:hover .el__index {
-    transform: translate3d(0, 0, 0);
-}
-
-.cont.s--el-active .el__index {
-    transition: transform 0.5s, opacity 0.3s;
-    opacity: 0;
-}
-
-.el__index-back, .el__index-front {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Color For number menu*/
-.el__index-back {
-    color: goldenrod;
-    opacity: 0;
-    transition: opacity 0.25s 0.25s;
-}
-
-.el:hover .el__index-back {
-    transition: opacity 0.25s;
-    color: whitesmoke;
-    opacity: 1;
-}
-
-.el__index-overlay {
-    overflow: hidden;
-    position: relative;
-    transform: translate3d(0, 100%, 0);
-    transition: transform 0.5s 0.1s;
-    color: transparent;
-}
-
-.el__index-overlay:before {
-    content: attr(data-index);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    color: black;
-    transform: translate3d(0, -100%, 0);
-    transition: transform 0.5s 0.1s;
-}
-
-.el:hover .el__index-overlay {
-    transform: translate3d(0, 0, 0);
-}
-
-.el:hover .el__index-overlay:before {
-    transform: translate3d(0, 0, 0);
-}
-
-/* Everything Above effects numbers */
-
-
-/* everything below effect the sections for boxes */
-.el:nth-child(1) .el__bg:before {
-    transition-delay: 0s;
-    background-image: url("IMG/paper2.jpg");
-}
-
-.el:nth-child(2) {
-    transform: translate3d(105.2083333333%, 0, 0);
-    transform-origin: 155.2083333333% 50%;
-}
-
-
-.el:nth-child(3) {
-    transform: translate3d(210.4166666667%, 0, 0);
-    transform-origin: 260.4166666667% 50%;
-}
-
-.el:nth-child(4) {
-    transform: translate3d(315.625%, 0, 0);
-    transform-origin: 365.625% 50%;
-}
-
-
-.el:nth-child(5) {
-    transform: translate3d(420.8333333333%, 0, 0);
-    transform-origin: 470.8333333333% 50%;
-}
-
-
-
-
-/*Media All Sizes*/
-@media screen and (min-width: 768px) {
-
-    hr {
-        width: 55%
+    body {
+        background-image: url("../Images/anime.jpg");;
+        background-size: 30%;
+        font-family: 'Rosewell Black RGH', sans-serif;
+        text-align: center;
+        color: black;
+        font-size: 15px;
     }
-}
 
-@media screen and ( min-width: 992px) {
-
-    hr {
-        width: 100%
+    Footer{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 15px;
     }
-}
 
-@media screen and (min-width: 1450px) {
-
-    hr {
-        width: 100%
+    /*End of Background style*/
+    h2 {
+        color: black;
+        background-color: yellow;
+        opacity: 75%;
+        font-family: 'Rosewell Black RGH', sans-serif;
+        font-size: 30px;
+        text-align: center;
     }
+
+    h1 {
+        color: silver;
+        background-color: black;
+        opacity: 70%;
+        font-family: Impact;
+
+    }
+
+
+    .cont {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+        padding: 80px 70px;
+    }
+
+    /*Fixes size of div cards*/
+    .cont__inner {
+        position: relative;
+        height: 75%;
+        width: auto;
+    }
+
+    /*Card positisons */
+    .el {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 19.2%;
+        height: 100%;
+        background-image: url("../Images/super-saiyan-dragon-ball-vegeta-dragon-ball-super-wallpaper-preview.jpg");;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s;
+        will-change: transform, width, opacity;
+    }
+
+    .el:not(.s--active) {
+        cursor: pointer;
+    }
+
+    /*Header for cards*/
+    .el__text {
+        text-transform: uppercase;
+    }
+
+    /*end of headers for cards*/
+    /* Everything Below effects the text area */
+    .el__index-back, .el__index-front {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    /* Color For text anime hero/villians*/
+    .el__index-back {
+        color: goldenrod;
+        opacity: 0;
+        transition: opacity 0.25s 0.25s;
+    }
+
+    .el:hover .el__index-back {
+        transition: opacity 0.25s;
+        color: whitesmoke;
+        opacity: 1;
+    }
+
+    .el__index-overlay {
+        overflow: hidden;
+        position: relative;
+        transform: translate3d(0, 100%, 0);
+        transition: transform 0.5s 0.1s;
+        color: transparent;
+    }
+
+    .el__index-overlay:before {
+        content: attr(data-index);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        color: black;
+        transform: translate3d(0, -100%, 0);
+        transition: transform 0.5s 0.1s;
+    }
+
+    .el:hover .el__index-overlay {
+        transform: translate3d(0, 0, 0);
+    }
+
+    .el:hover .el__index-overlay:before {
+        transform: translate3d(0, 0, 0);
+    }
+
+    /* Everything Above effects numbers */
+    /* everything below effect the sections for boxes */
+    .el:nth-child(1) .el__bg:before {
+        transition-delay: 0s;
+    }
+
+    .el:nth-child(2) {
+        background-image: url("../Images/aizawa_by_meowyin_dcd2srq-350t.jpg");;
+        transform: translate3d(105.2083333333%, 0, 0);
+        transform-origin: 155.2083333333% 50%;
+        color: white;
+        font-family: 'Rosewell Black RGH', sans-serif;
+    }
+
+
+    .el:nth-child(3) {
+        background-image: url("../Images/9781658757393.jpg");;
+        transform: translate3d(210.4166666667%, 0, 0);
+        transform-origin: 260.4166666667% 50%;
+        color: white;
+        font-family: 'Rosewell Black RGH', sans-serif;
+
+    }
+
+    .el:nth-child(4) {
+        background-image: url("../Images/Demon-Slayer-Season-2.jpeg");;
+        transform: translate3d(315.625%, 0, 0);
+        transform-origin: 365.625% 50%;
+        color: black;
+        font-family: 'Rosewell Black RGH', sans-serif;
+        font-weight: bolder;
+    }
+
+
+    .el:nth-child(5) {
+        background-image: url("../Images/titan.0.0.jpg");;
+        transform: translate3d(420.8333333333%, 0, 0);
+        transform-origin: 470.8333333333% 50%;
+        color: black;
+        font-weight: bolder;
+        font-family: 'Rosewell Black RGH', sans-serif;
+    }
+
+
+    /*Media All Sizes*/
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Konami.css">
+    <link href="http://fonts.cdnfonts.com/css/gun-metal" rel="stylesheet">
+
+</head>
+<body>
+<h1>Boss Fight</h1>
+<h2>Hurry Use The Code </h2>
+
+<script>
+    "use strict";
+    $(document).keyup(function (event) {
+        console.log(event.keyCode);
+    });
+    var allowedKeys = {
+        // a key map of allowed keys
+        37: 'left',
+        38: 'up',
+        39: 'right',
+        40: 'down',
+        65: 'a',
+        66: 'b',
+        13: 'enter'
+    };
+    // the Konami Code sequence
+    var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'enter'];
+
+    // a variable to remember the 'position' the user has reached so far.
+    var konamiCodePosition = 0;
+    document.addEventListener('keydown', function (e) {
+        var key = allowedKeys[e.keyCode];
+        var requiredKey = konamiCode[konamiCodePosition];
+        if (key == requiredKey) {
+            konamiCodePosition++;
+
+            // a variable to remember the 'position' the user has reached so far.
+            if (konamiCodePosition == konamiCode.length) {
+                activateCheats();
+                konamiCodePosition = 0;
+            }
+        } else {
+            konamiCodePosition = 0;
+        }
+    });
+
+    function activateCheats() {
+        document.body.style.backgroundImage = "url('IMG/fight.gif')";
+        var audio = new Audio('rain.mp3');
+        audio.play();
+        alert("GOD MODE: ZEUS SPEAR ENABLED ");
+    }
+
+</script>
+<embed src="IMG/anime.mp3" loop="true" autostart="true" width="2" height="0" type="audio/mp3">
+</body>
+</html>

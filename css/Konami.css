@@ -1,0 +1,19 @@
+body{
+    background-image:url("../IMG/giphy.gif");
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-size: 150px;
+    color: goldenrod;
+    font-family: 'Gunmetal', sans-serif;
+
+}
+h2{
+    text-align: center;
+    font-size: 60px;
+    color: whitesmoke;
+    opacity: 20%;
+    font-family: 'Gunmetal', sans-serif;
+
+}

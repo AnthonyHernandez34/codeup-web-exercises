@@ -1,0 +1,52 @@
+
+#titleText {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+body {
+    background-color: rgb(247 245 239);
+    color: rgb(80 117 70);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+dl {
+    /*text-align: center;*/
+}
+
+dt {
+    font-weight: bold;
+}
+
+dt, dd {
+    margin: 10PX;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+
+.frame {
+    border: solid black 5px;
+    height: 250px;
+    width: 200px;
+
+}
+
+.left {
+    background-color: red;
+}
+
+.center {
+    background-color: green;
+}
+
+.right {
+    background-color: yellow;
+}

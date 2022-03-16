@@ -14,6 +14,6 @@
     return `
             <p class= "joke">${jokeline.value}</p>
             `
-})
+}).join('');
     document.querySelector("#cnjokes").insertAdjacentHTML("afterbegin", comedy)
 })

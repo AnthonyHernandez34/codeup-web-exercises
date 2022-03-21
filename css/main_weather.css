@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+body {
+    font-family: "Comic Sans MS";
+    font-weight:bolder;
+    background-size: cover;
+    background-image:url('../IMG/weather.gif')
+    /*color: whitesmoke;*/
+}
+
+h1 {
+    font-family: "Comic Sans MS";
+    margin-top: .7em;
+    color: white;
+    font-size: 100px;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+.header {
+    margin-bottom: 2em;
+}
+#map {
+    border-radius: 0 0 12px 12px;
+    image-resolution: normal;
+    border: black;
+    border-style: solid;
+}
+
+#allWeather {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#cardContainer {
+    padding: 10px;
+    color: black;
+    border-style: solid;
+    border-color: black;
+}
+
+.card {
+    border-radius: 12px;
+    padding-right: 0;
+    margin-right: 0;
+    opacity: 70%;
+    color: whitesmoke;
+}
+
+.card-body {
+    border-radius: 6px;
+    border-color: black;
+    border-style: solid;
+    color: red;
+}
+
+
+li, h5, .align {
+    text-align: center;
+}
+
+.align {
+    font-style: italic;
+}
+
+#currentDisplay {
+    margin-top: 2.5em;
+    margin-left: 54px;
+}
+
+.currently {
+    font-size: 2em;
+    display: block;
+}
+
+#sub-header {
+    font-size: 10px;
+}
+
+#location {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#numberTemp {
+    font-weight: bold;
+    font-size: 3em;
+    color: transparent;
+}
+
+form {
+    width: 970px;
+    margin: 0 auto;
+}
+
+#searchButton {
+    padding: 5px;
+    border-radius: 0 5px 0 0;
+    background-color: black;
+    border: none;
+    width: 74px;
+}
+
+
+
+#searchInput {
+    width: 889px;
+    border-radius: 5px 0 0 0;
+    background-color: #e2e2e2;
+    border: black;
+    border-style: solid;
+}
+
+#mapContainer {
+    width: 100%;
+    height: fit-content;
+}
+
+#formAndMap {
+    margin-top: 9em;
+}
+
+.content {
+    position: relative;
+}
+
+.content h2 {
+    position: absolute;
+}
+
+.content h2:nth-child(1){
+    -webkit-text-stroke: 3px black ;
+}
+
+.content h2:nth-child(2){
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+
+.grow { transition: all .4s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+footer{
+    width: 99%;
+    margin: 10px;
+    padding: 10px;
+}

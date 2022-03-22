@@ -12,10 +12,10 @@ var marker = new mapboxgl.Marker({
     color: "#06d6a0",
 }).setLngLat([-98.4936, 29.4241])
     .addTo(map);
-
+// Pop up for marker
 var popup = new mapboxgl.Popup()
     .setLngLat(marker.getLngLat())
-    .setHTML("<h5 class=''>San Antonio</h5>")
+    .setHTML("<h5 class=''> </h5>")
 // .addTo(map);
 
 marker.setPopup(popup);
@@ -69,7 +69,7 @@ function weatherPanels(coordinates) {
             var feelsLikeTemp = feelsLike.day.toFixed() + "°F";
             var bothMaxMin = "Max: " + maxTemp + "<br>" + " Min: " + minTemp
 
-
+// Card weather update
             function renderWeather() {
                 $('#allWeather').append(
                     '<div class="card col-2 grow" id="cardContainer">'
@@ -90,7 +90,7 @@ function weatherPanels(coordinates) {
 
             renderWeather();
         }
-
+// H2 Number for temp in area
         function renderCurrent() {
             // var input = $('#searchInput').val();
             $('#currentDisplay').append(
